@@ -1,41 +1,22 @@
-/*                                                                                                                                                              
- *
- *                                                                                                                                                               * File: 4-print_most_numbers.c                                                                                                                                                                                                                                                                       
- *
- *                                                                                                                                                                */                                                                                                                                                             
+#include "holberton.h"
 
-                                                                                                                                                                
+/**
+ * print_most_numbers - prints 0 - 9 except 2, 3
+ * Description: prints
+ * Return: void
+ */
 
-#include "main.h"                                                                                                                                               
+void print_most_numbers(void)
+{
+	int a = 0;
 
-                                                                                                                                                                
-
-/**                                                                                                                                                             
- *
- *  * print_most_numbers - Prints the numbers from 0-9 except for 2 and 4.                                                                                         
- *
- *   */                                                                                                                                                             
-
-void print_most_numbers(void)                                                                                                                                   
-
-{                                                                                                                                                               
-
-	        int num;                                                                                                                                                
-
-		                                                                                                                                                                
-
-		        for (num = 0; num <= 9; num++)                                                                                                                          
-
-				        {                                                                                                                                                       
-
-						                if (num != 2 && num != 4)                                                                                                                       
-
-									                        _putchar((num % 10) + '0');                                                                                                             
-
-								        }                                                                                                                                                       
-
-			                                                                                                                                                                
-
-			        _putchar('\n');                                                                                                                                         
-
-} 
+	while (a <= 9)
+	{
+		if (a != 2 && a != 4)
+		{
+			_putchar(a + '0');
+		}
+		a++;
+	}
+	_putchar('\n');
+}
