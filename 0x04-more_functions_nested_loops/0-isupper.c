@@ -1,30 +1,21 @@
-#include "main.h"                                                                                                                                               
+/*
+ * File: 0-isupper.c
+ * Auth: Suara Ayomide
+ */
 
-                                                                                                                                                                
+#include "main.h"
 
-/**                                                                                                                                                             
+/**
+ * _isupper - Checks for uppercase characters.
+ * @c: The character to be checked.
  *
- * is_digit -                                                                                                                                        
- * Return: 1 0                                                                                                                                      
- *
- *
- *
- * */                                                                                                                                                             
+ * Return: 1 if character is uppercase, 0 otherwise.
+ */
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
 
-                                                                                                                                                                
-
-int _isupper(int c)                                                                                                                         
-
-{ 
-
-	if (c >= 'A' && c<= 'Z'){
-
-		return 1;
-
-	}else{
-
-		return 0;
-
-	}
-
+	else
+		return (0);
 }
